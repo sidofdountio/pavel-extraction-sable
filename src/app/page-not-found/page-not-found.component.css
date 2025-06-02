@@ -1,0 +1,144 @@
+.body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%;
+}
+
+.error-content h1 {
+    font-size: 8em;
+    color: #dc3545; /* A common error red */
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.error-content h2 {
+    font-size: 2em;
+    color: #495057;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.error-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.error-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+}
+
+.error-content ul li {
+    margin-bottom: 10px;
+}
+
+.error-content ul li a {
+    text-decoration: none;
+    color: #007bff; /* A common link blue */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.error-content ul li a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.search-box {
+    margin-top: 30px;
+    border-top: 1px solid #e9ecef;
+    padding-top: 20px;
+}
+
+.search-box p {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #6c757d;
+}
+
+.search-box form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-box input[type="text"] {
+    padding: 12px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 70%;
+    max-width: 300px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.search-box button {
+    padding: 12px 20px;
+    background-color: #28a745; /* A common success green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-box button:hover {
+    background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .error-content h1 {
+        font-size: 6em;
+    }
+
+    .error-content h2 {
+        font-size: 1.7em;
+    }
+
+    .container {
+        padding: 30px;
+    }
+
+    .search-box form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-box input[type="text"] {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .error-content h1 {
+        font-size: 4em;
+    }
+
+    .error-content h2 {
+        font-size: 1.5em;
+    }
+
+    .container {
+        padding: 20px;
+    }
+}
