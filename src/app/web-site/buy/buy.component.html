@@ -1,1 +1,55 @@
-<p>buy works!</p>
+<div class="container">
+    <div class="row mb-2">
+
+        <div class="col d-flex justify-content-center">
+            <i class="bi bi-check-circle-fill list-icon text-success text-center fs-1"></i>
+
+        </div>
+        <section class="">
+            <p class="text-muted">
+                Ce KIT vise à présenter de façons claire une méthodologie de mise en œuvre
+                de plan d’urgence dans les sites des carrières industrielles de sables fluviale de la région du littoral
+                Cameroun. Cette méthodologie passe premièrement par une compréhension claire des différents
+                procédés employés dans cette extraction, suivi d’une analyse préliminaire des risques (APR) dont
+                l’objectif est d’identifier, évaluer et hiérarchisé les risques, afin de pouvoir apporter des mesures de
+                prévention et d’intervention adapter à ces carrières pour la maîtrise des risques. Il ressort de cette
+                étude que pour la sécurité dans leurs sites, les exploitants sont tenus de déployer dans leurs site
+                l’ensemble des moyens énumérer dans ce travail afin de s’assurer d’une gestion des risques optimal
+                et à jour. Par ailleurs des mises à jour devront être envisagé à ce plan d’urgence suite à une
+                réévaluation ultérieur des risques
+            </p>
+        </section>
+    </div>
+
+    <!-- buy form -->
+    <div class="row justify-content-center">
+        <div class="col-md-6" [formGroup]="paymentForm">
+            <h2 class="text-center">Acheter</h2>
+            <div class="mb-3">
+                <label class="form-label">Votre email</label>
+                <input type="email" class="form-control" placeholder="ex. johndoe@gmail.com" required formControlName="email"/>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Votre Nom complet</label>
+                <input type="text" class="form-control" placeholder="John Doe" required formControlName="fullName" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Votre Nom Telephone</label>
+                <input type="text" class="form-control" placeholder="+237 678990987" required formControlName="phone"/>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Addresse</label>
+                <input type="text" class="form-control" placeholder="Ex.Yaounde simbock" required formControlName="address" />
+            </div>
+
+            <div class="mb-3">
+               <button type="button" class="btn btn-info" (click)="OnBuy()" [disabled]="!paymentForm.valid">Acheter</button>
+               <!-- <button type="button" class="btn btn-info" (click)="OnBuyTest()" >Acheter</button> -->
+            </div>
+        </div>
+    </div>
+    <!-- end uy form -->
+</div>

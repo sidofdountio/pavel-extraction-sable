@@ -1,0 +1,14 @@
+P{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2.1rem;
+}
+
+section {
+    padding: 20px;
+    /* padding: 60px 0; */
+    background-color: #fff; /* White background for content sections */
+    border-radius: 8px;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05); /* Soft shadow for depth */
+    margin-bottom: 40px;
+    overflow: hidden; /* To contain any floated elements */
+}

@@ -3,3 +3,115 @@ h1{
     font-size: 24px;
     font-family: 'Roboto';
 }
+
+:root {
+    --primary-blue: #0056b3; /* Darker blue for primary elements */
+    --secondary-blue: #007bff; /* Standard Bootstrap primary blue */
+    --light-bg: #f8f9fa; /* Light grey background */
+    --text-color: #343a40; /* Dark grey for general text */
+    --shadow-light: rgba(0, 0, 0, 0.08); /* Light shadow for cards */
+}
+
+
+
+/* --- Typography --- */
+h1, h2 {
+    font-family: 'Montserrat', sans-serif; /* A more impactful font for headings */
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--primary-blue);
+}
+
+.display-5 {
+    font-size: 2.8rem; /* Slightly adjusted for impact */
+}
+
+.lead {
+    font-weight: 400;
+    font-size: 1.15rem;
+    color: #555;
+}
+
+/* --- Buttons --- */
+.btn-primary {
+    background-color:  #003f80;
+    border-color:#003f80;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px; 
+    transition: all 0.3s ease;
+    /* box-shadow: 0 4px 8px var(--shadow-light); */
+}
+
+.carousel-item img {
+    height: 450px; /* **Fixed height for consistency across all images** */
+    width: 100%; /* **Ensures image fills the width of its container** */
+    object-fit: cover;
+}
+
+/* --- Sections and Cards --- */
+section {
+    padding: 60px 0;
+    background-color: #fff; /* White background for content sections */
+    border-radius: 8px;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05); /* Soft shadow for depth */
+    margin-bottom: 40px;
+    overflow: hidden; /* To contain any floated elements */
+}
+
+/* Specific section styling */
+#hero-section {
+    background-color: var(--light-bg); /* Hero section background */
+    box-shadow: none; /* No shadow for the main hero */
+    padding-bottom: 30px;
+    border-radius: 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--primary-blue);
+}
+
+/* --- List Styling (Problems, Benefits, Audience) --- */
+.list-icon {
+    font-size: 1.25rem;
+    margin-right: 10px;
+    vertical-align: middle; /* Align icon with text */
+}
+
+.list-group-item {
+    border: none; /* Remove default Bootstrap border */
+    border-left: 5px solid var(--secondary-blue); /* Accent border */
+    margin-bottom: 15px;
+    padding: 20px;
+    background-color: #fefefe;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px var(--shadow-light);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.list-group-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px var(--shadow-light);
+}
+
+/* Specific colors for icons */
+.bi-x-circle-fill { color: #dc3545; } /* Red for problems */
+.bi-check-circle-fill { color: #28a745; } /* Green for benefits */
+.bi-person-fill { color: #17a2b8; } /* Teal for audience */
+
+/* Enhanced list for problems/audience */
+.custom-list li {
+    background-color: #fefefe;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--shadow-light);
+    display: flex; /* Use flexbox for icon alignment */
+    align-items: flex-start; /* Align icon to top of text */
+}
+.custom-list li .text-content {
+    flex-grow: 1; /* Allow text to take remaining space */
+}

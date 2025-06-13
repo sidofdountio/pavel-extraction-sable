@@ -4,6 +4,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './web-site/welcome/welcome.component';
 import { AboutComponent } from './web-site/about/about.component';
+import { BuyComponent } from './web-site/buy/buy.component';
+import { KitComponent } from './web-site/kit/kit.component';
 
 export const routes: Routes = [
 
@@ -27,7 +29,16 @@ export const routes: Routes = [
         title: 'about'
     },
 
-
+    {
+        path: "buy",
+        component: BuyComponent,
+        title: 'achter votre kit'
+    },
+    {
+        path: "kit",
+        component: KitComponent,
+        title: 'Kit'
+    },
     {
         path: "**",
         title: "page not found",
